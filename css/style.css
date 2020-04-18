@@ -1,0 +1,17 @@
+body {
+  background-image: url('beach.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Dancing Script';
+}
+
+h1 {
+  font-size: 7vw;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
