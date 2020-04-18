@@ -10,13 +10,16 @@
 body {
   background-image: url('beach.png');
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: repeat-y;
   width: 100vw;
   height: 100vh;
   font-family: 'Roboto';
   color: white;
   text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -28,6 +31,36 @@ h1 {
   padding: 0;
 }
 
+/* GRID */
+#beach-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  text-align: center;
+  border: transparent 5px;
+}
+
+.cell {
+  border: solid 3px white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-right: 5px;
+  border-radius: 5%;
+  flex: 1, 0, auto;
+  display: inline-block;
+}
+
+.cell:hover {
+  background-color: #38b6ff;
+}
+
+li {
+  list-style-type: none;
+}
+/* GRID END */
 
 
 /* FORM  */
@@ -41,15 +74,16 @@ form {
 }
 
 input:focus,
-select:focus {
+select:focus,
+button:focus {
   outline: none;
 }
 
 .overall-container {
-  padding: 40px;
+  padding: 20px;
   display:inline-block;
   margin-left:auto;margin-right:auto;
-  text-align:left;
+  text-align:center;
 }
 
 .container-form {
@@ -133,9 +167,9 @@ input[type=image]:hover {
     width: 100%;
     margin-top: 0;
   }
-  body {
+  /* body {
     background-repeat: repeat-y;
-  }
+  } */
   h1 {
     font-size: 12vw;
   }
@@ -143,40 +177,8 @@ input[type=image]:hover {
     flex-direction: column;
   }
 }
+
 /* FORM END */
-
-
-
-/* GRID */
-#beach-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 5px;
-  text-align: center
-}
-
-.cell {
-  border: solid 3px white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-right: 5px;
-  border-radius: 5%;
-  flex: 1, 0, auto;
-  display: inline-block;
-}
-
-.cell:hover {
-  background-color: #38b6ff;
-}
-
-li {
-  list-style-type: none;
-}
-/* GRID END */
-
 
 
 /* BUTTONS */
@@ -212,13 +214,13 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   padding: 0;
   margin: 0;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 25px;
   padding: 0;
   margin: 0;
 }
@@ -230,7 +232,23 @@ h5 {
 }
 /* OUTPUT END  */
 
-#rank {
-  color: transparent;
-  text-shadow: 0 0 0 white;
+
+
+.toggle-container {
+  padding: 0px;
+}
+
+.toggle {
+  background-color: transparent;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.toggle:hover {
+  background: #38b6ff;
 }

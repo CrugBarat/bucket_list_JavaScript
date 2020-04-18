@@ -35,3 +35,21 @@ const handleDelete = function (event) {
   const beachList = document.querySelector('#beach-list');
   beachList.innerHTML = "";
 }
+
+function hideForm() {
+  const fullForm = document.getElementById("fullForm");
+  if (fullForm.style.display === "none") {
+    fullForm.style.display = "block";
+  } else {
+    fullForm.style.display = "none";
+  }
+}
+
+function onoff(){
+  currentvalue = document.getElementById('onoff').value;
+  if(currentvalue == "VIEW"){
+    document.getElementById("onoff").value="HIDE";
+  }else{
+    document.getElementById("onoff").value="VIEW";
+  }
+}
