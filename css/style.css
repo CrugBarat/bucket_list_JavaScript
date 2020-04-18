@@ -5,13 +5,50 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  font-family: 'Dancing Script';
+  font-family: 'Oswald';
+  color: white;
 }
 
 h1 {
+  font-family: 'Dancing Script';
   font-size: 7vw;
   color: white;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+select {
+  display:inline;
+  float: none;
+}
+
+form {
+  font-size: 20px;
+}
+
+#beach-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1.2vh;
+}
+
+.cell {
+  border: solid 3px white;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
+  margin-right: 1vw;
+  border-radius: 5%;
+  flex: 1, 0, auto;
+}
+
+.cell:hover {
+  background-color: #38b6ff;
+}
+
+li {
+  list-style-type: none;
 }
