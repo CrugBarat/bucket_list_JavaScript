@@ -3,13 +3,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const newForm = document.querySelector('#beach-form');
   newForm.addEventListener('submit', handleNewForm);
 
+  const deleteAll = document.querySelector('#delete-all');
+  deleteAll.addEventListener('click', handleDelete);
+
 });
 
 const handleNewForm = function (event) {
+
   event.preventDefault();
+
   const newForm = createNew(event.target);
+
   const formInput = document.querySelector('#beach-list');
   formInput.appendChild(newForm);
+
   event.target.reset();
 }
 
@@ -31,5 +38,11 @@ const createNew = function (form) {
   newForm.appendChild(country);
 
   return newForm;
+}
 
+const handleDelete = function (event) {
+
+  const beachList = document.querySelector('#beach-list');
+  beachList.innerHTML = "";
+  
 }
