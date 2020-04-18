@@ -1,12 +1,4 @@
-body {
-  background-image: url('beach.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Oswald';
-  color: white;
+* {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -15,17 +7,32 @@ body {
   user-select: none;
 }
 
+body {
+  background-image: url('beach.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto';
+  color: white;
+  text-align: center;
+}
+
 h1 {
   font-family: 'Dancing Script';
-  font-size: 7vw;
+  font-size: 12.0vmin;
   color: white;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
+
+
+/* FORM  */
 select {
-  display:inline;
+  display: inline;
   float: none;
 }
 
@@ -33,62 +40,37 @@ form {
   font-size: 20px;
 }
 
-#beach-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 1.2vh;
+input:focus,
+select:focus {
+  outline: none;
 }
 
-.cell {
-  border: solid 3px white;
-  padding-left: 0.7vw;
-  padding-right: 0.7vw;
-  padding-top: 0.1vw;
-  padding-bottom: 0.1vw;
-  margin-right: 1vw;
-  border-radius: 5%;
-  flex: 1, 0, auto;
+.overall-container {
+  padding: 40px;
+  display:inline-block;
+  margin-left:auto;margin-right:auto;
+  text-align:left;
 }
 
-.cell:hover {
-  background-color: #38b6ff;
-}
-
-li {
-  list-style-type: none;
-}
-
-#delete-all {
-  height: 20px;
-}
-
-#save {
-  height: 20px;
-}
-
-.rank {
-  height: 20px;
-}
-
-/* FORM  */
-.container {
+.container-form {
   border: solid 3px white;
   border-radius: 5px;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
+  padding-top: 10px;
 }
 
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
+  padding-top: 10px;
+  clear: none;
 }
 
 .row:after {
@@ -99,7 +81,6 @@ li {
 
 input[type=image] {
   cursor: pointer;
-  float: right;
 }
 
 input[type=text], select {
@@ -107,19 +88,149 @@ input[type=text], select {
   border: 2px solid #fff;
   border-radius: 4px;
   resize: vertical;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background: transparent;
+  color: #fff;
 }
 
 label {
   padding-right: 12px;
   padding-left: 0;
   display: inline-block;
+  float: left;
+  clear: none;
+  display: block;
 }
 
-/* @media screen and (max-width: 600px) {
+label.radio-label {
+  cursor: pointer;
+}
+
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0px;
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+
+input[type=radio]:checked + img {
+  background: #38b6ff;
+  border-radius: 50%;
+}
+
+input[type=image]:hover {
+  background: #38b6ff;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
-} */
-
+  body {
+    background-repeat: repeat-y;
+  }
+  h1 {
+    font-size: 12vw;
+  }
+  #beach-list {
+    flex-direction: column;
+  }
+}
 /* FORM END */
+
+
+
+/* GRID */
+#beach-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  text-align: center
+}
+
+.cell {
+  border: solid 3px white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-right: 5px;
+  border-radius: 5%;
+  flex: 1, 0, auto;
+  display: inline-block;
+}
+
+.cell:hover {
+  background-color: #38b6ff;
+}
+
+li {
+  list-style-type: none;
+}
+/* GRID END */
+
+
+
+/* BUTTONS */
+.buttons {
+  float: right;
+}
+
+#delete-all {
+  height: 30px;
+  padding: 5px;
+}
+
+#save {
+  height: 30px;
+  padding: 5px;
+}
+
+.radio-img {
+  height: 30px;
+  padding: 4px 4px 4px 4px;
+}
+
+/* BUTTONS END */
+
+
+
+/* OUTPUT  */
+h2 {
+  font-family: 'Dancing Script';
+  font-size: 45px;
+  padding: 15px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  font-size: 30px;
+  padding: 15px;
+  margin: 0;
+}
+/* OUTPUT END  */
+
+#rank {
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}

@@ -19,9 +19,9 @@ const createNew = function (form) {
   const beach = document.createElement('h2');
   beach.textContent = form.beach.value;
   newForm.appendChild(beach);
-  const city = document.createElement('h3');
-  city.textContent = form.city.value;
-  newForm.appendChild(city);
+  const resort = document.createElement('h3');
+  resort.textContent = form.resort.value;
+  newForm.appendChild(resort);
   const country = document.createElement('h4');
   country.textContent = form.country.value;
   newForm.appendChild(country);
