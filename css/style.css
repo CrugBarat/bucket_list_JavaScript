@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('beach.png');
+  background-image: url('images/beach.png');
   background-position: center;
   background-size: cover;
   background-repeat: repeat-y;
@@ -167,9 +167,6 @@ input[type=image]:hover {
     width: 100%;
     margin-top: 0;
   }
-  /* body {
-    background-repeat: repeat-y;
-  } */
   h1 {
     font-size: 12vw;
   }
