@@ -1,4 +1,4 @@
-<img src="https://github.com/CrugBarat/my_files/blob/master/bucket_list3.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/bucket_list2.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/bucket_list1.jpeg" width="300">
+<img src="https://github.com/CrugBarat/my_files/blob/master/bucket_list3.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/bucket_list2.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/bucket_list1.jpeg" height="200">
 
 
 # Bucket & Spade List
