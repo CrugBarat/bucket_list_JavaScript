@@ -53,3 +53,7 @@ function onoff(){
     document.getElementById("onoff").value="VIEW";
   }
 }
+
+function deleteAll() {
+  alert('List Deleted!')
+}
