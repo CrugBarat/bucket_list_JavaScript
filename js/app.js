@@ -44,3 +44,12 @@ function hideForm() {
     fullForm.style.display = "none";
   }
 }
+
+function onoff(){
+  currentvalue = document.getElementById('onoff').value;
+  if(currentvalue == "VIEW"){
+    document.getElementById("onoff").value="HIDE";
+  }else{
+    document.getElementById("onoff").value="VIEW";
+  }
+}
