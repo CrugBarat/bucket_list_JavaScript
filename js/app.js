@@ -60,6 +60,6 @@ function deleteAll() {
 
 $(document).ready(function () {
   $("#onoff").click( function () {
-    $("#airplane").animate({width: '0px'}, 6000);
+    $("#airplane").animate({width: '0px'}, 7500);
   });
 });
