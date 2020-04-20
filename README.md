@@ -46,3 +46,5 @@ Your task is to create a front-end JavaScript application that allows users to i
 # Acknowledgments
 
 Icons used: [IconsDb](https://www.iconsdb.com/).
+
+Shout out to T! Ta
