@@ -57,3 +57,9 @@ function onoff(){
 function deleteAll() {
   alert('List Deleted!')
 }
+
+$(document).ready(function () {
+  $("#onoff").click( function () {
+    $("#airplane").animate({width: '0px'}, 6000);
+  });
+});
