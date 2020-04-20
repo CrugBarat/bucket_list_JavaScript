@@ -9,7 +9,9 @@ A basic bucket list app using:
 
 **Markup/Styling**: HTML5/CSS3
 
-Using JavaScript, the bucket list can dynamically add visited resorts to a list. The list uses flex. The form can be dynamically toggled on/off. This exercise was tasked to me by CodeClan, Glasgow where I studied towards a PDA Level 8 in Professional Software Development. The exercise brief can be found below.
+Using JavaScript, the bucket list can dynamically add visited resorts to a list. The list uses flex. The form can be dynamically toggled on/off. A small airplane icon, animated using JQuery, moves across viewport when form his toggled.
+
+This exercise was tasked to me by CodeClan, Glasgow where I studied towards a PDA Level 8 in Professional Software Development. The exercise brief can be found below.
 
 ---
 
